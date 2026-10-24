@@ -1,0 +1,1001 @@
+{
+  "architecture_families": [
+    "MLP2",
+    "MLP4",
+    "Transformer2",
+    "RNN",
+    "CNN"
+  ],
+  "input_dimension": 8,
+  "internal_variables_per_template": 16,
+  "model_execution_note": "Architecture labels indicate synthetic surrogate families. No external ML framework training, learned model execution, or M1 evaluation has been performed.",
+  "planned_run_count": 60,
+  "runs_per_template": 3,
+  "schema": "systems_public.json",
+  "schema_version": "1.0",
+  "synthetic_only": true,
+  "system_template_count": 20,
+  "system_templates": [
+    {
+      "architecture_family": "MLP2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S001_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S001_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S001_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S001"
+    },
+    {
+      "architecture_family": "MLP2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S002_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S002_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S002_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S002"
+    },
+    {
+      "architecture_family": "MLP2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S003_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S003_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S003_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S003"
+    },
+    {
+      "architecture_family": "MLP2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S004_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S004_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S004_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S004"
+    },
+    {
+      "architecture_family": "MLP4",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S005_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S005_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S005_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S005"
+    },
+    {
+      "architecture_family": "MLP4",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S006_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S006_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S006_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S006"
+    },
+    {
+      "architecture_family": "MLP4",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S007_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S007_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S007_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S007"
+    },
+    {
+      "architecture_family": "MLP4",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S008_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S008_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S008_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S008"
+    },
+    {
+      "architecture_family": "Transformer2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S009_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S009_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S009_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S009"
+    },
+    {
+      "architecture_family": "Transformer2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S010_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S010_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S010_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S010"
+    },
+    {
+      "architecture_family": "Transformer2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S011_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S011_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S011_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S011"
+    },
+    {
+      "architecture_family": "Transformer2",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S012_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S012_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S012_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S012"
+    },
+    {
+      "architecture_family": "RNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S013_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S013_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S013_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S013"
+    },
+    {
+      "architecture_family": "RNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S014_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S014_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S014_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S014"
+    },
+    {
+      "architecture_family": "RNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S015_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S015_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S015_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S015"
+    },
+    {
+      "architecture_family": "RNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S016_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S016_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S016_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S016"
+    },
+    {
+      "architecture_family": "CNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S017_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S017_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S017_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S017"
+    },
+    {
+      "architecture_family": "CNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S018_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S018_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S018_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S018"
+    },
+    {
+      "architecture_family": "CNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S019_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S019_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S019_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S019"
+    },
+    {
+      "architecture_family": "CNN",
+      "architecture_status": "synthetic_surrogate_family_label_not_a_trained_framework_implementation",
+      "constraint_outputs": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "constraint_semantics": "satisfied iff reported constraint margin >= 0",
+      "ground_truth_visibility": "not included in this public file",
+      "input_dimension": 8,
+      "internal_variable_count": 16,
+      "internal_variables": [
+        "u00",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15"
+      ],
+      "objective_output": "objective",
+      "run_count": 3,
+      "runs": [
+        {
+          "run_id": "S020_seed101",
+          "seed": 101
+        },
+        {
+          "run_id": "S020_seed202",
+          "seed": 202
+        },
+        {
+          "run_id": "S020_seed303",
+          "seed": 303
+        }
+      ],
+      "system_id": "S020"
+    }
+  ],
+  "templates_per_architecture": 4
+}

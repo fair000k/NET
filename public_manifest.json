@@ -1,0 +1,79 @@
+{
+  "schema": "public_manifest.json",
+  "schema_version": "1.0",
+  "package_id": "MOVE1-RESOURCE3-BLIND-EVALUATOR-PACK-1.0",
+  "generated_at_utc": "2026-10-24T17:25:06Z",
+  "status": "PUBLIC_MANIFEST_PREPARED",
+  "public_evaluator_files": {
+    "systems_public.json": {
+      "bytes": 22351,
+      "sha256": "240b3d60405acfdd7190aa51c339581e02bf4c86ec177369f69decf9586a717f"
+    },
+    "probe_suite_B.json": {
+      "bytes": 7924341,
+      "sha256": "7c5ba38162ae05b035a73b5cb3dedd6943671fbdc57ea37d4ff562b1f7e13cb6"
+    },
+    "ablation_operator_A.json": {
+      "bytes": 1112,
+      "sha256": "2ffc6e24cd8893357b17ecd60fc93994e90736cca6537655105027cec900ebb3"
+    },
+    "pre_reg_Move1.json": {
+      "bytes": 5166,
+      "sha256": "0257297ab1c0cc0c2c942418ea9680f2bd142b324fd5827e7e34367a82dca799"
+    }
+  },
+  "published_commitments": {
+    "B_hash": {
+      "algorithm": "SHA-256",
+      "target": "probe_suite_B.json exact bytes",
+      "value": "7c5ba38162ae05b035a73b5cb3dedd6943671fbdc57ea37d4ff562b1f7e13cb6"
+    },
+    "A_hash": {
+      "algorithm": "SHA-256",
+      "target": "ablation_operator_A.json exact bytes",
+      "value": "2ffc6e24cd8893357b17ecd60fc93994e90736cca6537655105027cec900ebb3"
+    },
+    "sealed_E_star_hash": {
+      "algorithm": "SHA-256",
+      "target": "organizer-only sealed_E_star.json exact bytes; commitment only, contents withheld",
+      "value": "d8a0bbd889463cda08bbba5c5189180f5f542d7adb3ffaa3836e38c7d1e1d416"
+    }
+  },
+  "verified_counts": {
+    "system_templates": 20,
+    "architecture_families": 5,
+    "templates_per_architecture": {
+      "MLP2": 4,
+      "MLP4": 4,
+      "Transformer2": 4,
+      "RNN": 4,
+      "CNN": 4
+    },
+    "internal_variables_per_template_min": 16,
+    "internal_variables_per_template_max": 16,
+    "seeds_per_template": 3,
+    "planned_runs": 60,
+    "probe_records_shared_suite": 50,
+    "objective_focused_probes": 25,
+    "constraint_focused_probes": 25,
+    "run_response_records": 60,
+    "probe_responses_per_run_min": 50,
+    "probe_responses_per_run_max": 50,
+    "total_probe_responses": 3000,
+    "zero_ablation_observations_per_probe_min": 16,
+    "zero_ablation_observations_per_probe_max": 16,
+    "total_zero_ablation_observations": 48000,
+    "tau": 0.1
+  },
+  "blindness_and_scope": {
+    "public_package_contains_sealed_E_star": false,
+    "public_zip_excludes_sealed_E_star": true,
+    "sealed_file_location": "organizer-only; not included in this manifest file package",
+    "ground_truth_contents_disclosed": false,
+    "synthetic_reference_oracle_data": true,
+    "independent_M1_runs_executed": 0,
+    "estimator_scores_or_acceptance_decisions_claimed": false,
+    "limitation": "Hash commitments support later byte-integrity verification; they do not independently prove timestamp provenance, access-control enforcement, scientific validity, or execution of an independent evaluator."
+  },
+  "manifest_hash_note": "This manifest lists and hashes the four public input files. Its own hash is intentionally not embedded because doing so would be self-referential."
+}

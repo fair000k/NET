@@ -1,0 +1,98 @@
+{
+  "A": {
+    "definition_file": "ablation_operator_A.json",
+    "definition_sha256": "2ffc6e24cd8893357b17ecd60fc93994e90736cca6537655105027cec900ebb3",
+    "frozen": true,
+    "operator_id": "A_ZERO_SINGLE_VARIABLE_V1"
+  },
+  "architectures": [
+    "MLP2",
+    "MLP4",
+    "Transformer2",
+    "RNN",
+    "CNN"
+  ],
+  "blindness_and_access": {
+    "evaluator_may_receive": [
+      "systems_public.json",
+      "probe_suite_B.json",
+      "ablation_operator_A.json",
+      "pre_reg_Move1.json",
+      "manifest_public.json",
+      "README_PUBLIC.md"
+    ],
+    "hash_verification": "After evaluation and escrow release, verify SHA-256 of the exact sealed file bytes against sealed_E_star_hash before scoring.",
+    "important_limitation": "Hash commitment proves later file integrity relative to this commitment, not that the planted truth is scientifically valid or that evaluator blindness was enforced by access controls.",
+    "organizer_only_asset": "sealed_E_star.json",
+    "public_evaluator_package_excludes": "sealed_E_star.json and all explicit E_star membership fields"
+  },
+  "counts": {
+    "architecture_count": 5,
+    "constraint_focused_probes": 25,
+    "internal_variables_per_system": 16,
+    "objective_focused_probes": 25,
+    "planned_runs_total": 60,
+    "probes_per_run_k": 50,
+    "seed_values": [
+      101,
+      202,
+      303
+    ],
+    "seeds_per_template": 3,
+    "system_templates_N": 20,
+    "templates_per_architecture": 4
+  },
+  "created_at_utc": "2026-10-24T17:10:59Z",
+  "frozen": true,
+  "hash_commitments": {
+    "A_hash": {
+      "algorithm": "SHA-256",
+      "target": "ablation_operator_A.json exact bytes",
+      "value": "2ffc6e24cd8893357b17ecd60fc93994e90736cca6537655105027cec900ebb3"
+    },
+    "B_hash": {
+      "algorithm": "SHA-256",
+      "target": "probe_suite_B.json exact bytes, UTF-8, compact JSON, final newline",
+      "value": "7c5ba38162ae05b035a73b5cb3dedd6943671fbdc57ea37d4ff562b1f7e13cb6"
+    },
+    "sealed_E_star_hash": {
+      "algorithm": "SHA-256",
+      "target": "organizer-only sealed_E_star.json exact bytes, UTF-8, indented JSON, final newline",
+      "value": "d8a0bbd889463cda08bbba5c5189180f5f542d7adb3ffaa3836e38c7d1e1d416"
+    },
+    "systems_public_hash": {
+      "algorithm": "SHA-256",
+      "target": "systems_public.json exact bytes",
+      "value": "240b3d60405acfdd7190aa51c339581e02bf4c86ec177369f69decf9586a717f"
+    }
+  },
+  "metrics": {
+    "aggregation": "Report per-run metrics, then system-template means and architecture means. Do not pool raw TP/FP/FN across architectures without also reporting the per-template estimates.",
+    "bootstrap_CI": "For each run, draw 10,000 stratified bootstrap resamples of probe IDs with replacement, sampling 25 from OBJECTIVE_FOCUSED and 25 from CONSTRAINT_FOCUSED within each replicate. Refit the M1 estimator on each resample, compare its E_hat to sealed E_star, and report the 2.5th and 97.5th percentiles of the rho bootstrap distribution as a 95% percentile CI.",
+    "bootstrap_rng_seed": 742019,
+    "missing_or_failed_run": "Record as FAILED/NOT_ESTIMATED; do not impute an E_hat or silently omit the run from counts.",
+    "precision": "|E_hat intersect E_star| / |E_hat|; define as 0 when E_hat is empty.",
+    "recall": "|E_hat intersect E_star| / |E_star|.",
+    "rho": "1 - ||P_Estar - P_Ehat||_F / ||P_Estar||_F, where each projector is the 16x16 diagonal coordinate projector for the stated variable set. Do not clip rho; values may be negative."
+  },
+  "preregistration_scope": "Ground-truth commitment, public probe suite, zero-ablation operator, architecture allocation, sample/run counts, estimands, threshold, and bootstrap procedure are frozen before any independent M1 evaluation.",
+  "registration_id": "PRE-REG-MOVE1-RESOURCE3-1.0",
+  "run_execution_status": {
+    "M1_runs_executed": 0,
+    "acceptance_decisions_made": false,
+    "evaluation_scores_computed": false,
+    "planned_runs": 60
+  },
+  "schema": "pre_reg_Move1.json",
+  "schema_version": "1.0",
+  "status": "FROZEN_BEFORE_M1_EVALUATION",
+  "synthetic_setup_status": "Prepared. Oracle-style reference observations have been generated for the public probe suite; no M1 evaluator run, model-estimated E_hat, metric score, or acceptance decision has been executed.",
+  "tau": {
+    "acceptance_use": "Report threshold pass/fail separately from precision, recall, and rho; do not treat this criterion as proof of broader system correctness.",
+    "clarification": "The request did not specify the construction/normalization of v_S or aggregation across B; the formula above freezes those details for reproducibility without exposing E_star.",
+    "frozen": true,
+    "norm": "L2",
+    "operational_definition": "For each probe i, define d_i[j] = y_i.objective - y_i^(A_j).objective for each of the 16 single-variable zero-ablation responses. Let v_S,i = d_i / ||d_i||_2 when ||d_i||_2 > 1e-12, otherwise v_S,i = 0. For an estimated coordinate set E_hat, P_Ehat is its 16x16 diagonal coordinate projector. The tau error is RMS_i(||P_Ehat v_S,i - v_S,i||_2) over all 50 probes. The frozen threshold criterion is tau_error <= 0.1.",
+    "value": 0.1
+  }
+}

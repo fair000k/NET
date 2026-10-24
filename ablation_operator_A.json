@@ -1,0 +1,35 @@
+{
+  "definition": "For observed internal state u in R^16 and selected variable u_j, create u^(j) by setting only component j to exactly 0.0 while holding every other observed component fixed; recompute the system objective and all constraint outputs from that intervened state. Do not recompute upstream activations or alter x. Apply separately to each variable and each probe.",
+  "frozen": true,
+  "implementation_note": "B contains synthetic reference-oracle observations for each single-variable intervention. These are prepared data, not an independently executed M1 evaluation.",
+  "intervention_value": 0.0,
+  "name": "zero-ablation",
+  "operator_id": "A_ZERO_SINGLE_VARIABLE_V1",
+  "outputs_recomputed": [
+    "objective",
+    "constraints",
+    "constraint_satisfied"
+  ],
+  "schema": "ablation_operator_A.json",
+  "schema_version": "1.0",
+  "single_variable_intervention": true,
+  "state_dimension": 16,
+  "variables": [
+    "u00",
+    "u01",
+    "u02",
+    "u03",
+    "u04",
+    "u05",
+    "u06",
+    "u07",
+    "u08",
+    "u09",
+    "u10",
+    "u11",
+    "u12",
+    "u13",
+    "u14",
+    "u15"
+  ]
+}
