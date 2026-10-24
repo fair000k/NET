@@ -1,0 +1,109 @@
+{
+  "original_file": "probe_suite_B.json",
+  "original_size": 7924341,
+  "original_sha256": "7c5ba38162ae05b035a73b5cb3dedd6943671fbdc57ea37d4ff562b1f7e13cb6",
+  "expected_sha256": "7c5ba38162ae05b035a73b5cb3dedd6943671fbdc57ea37d4ff562b1f7e13cb6",
+  "chunk_size": 500000,
+  "chunk_count": 16,
+  "chunks": [
+    {
+      "sequence": 1,
+      "filename": "probe_suite_B.part001",
+      "byte_size": 500000,
+      "sha256": "3b33c23a372a7f230e712b813c24c350d83cf89e44b7f992fbca6f587955f941"
+    },
+    {
+      "sequence": 2,
+      "filename": "probe_suite_B.part002",
+      "byte_size": 500000,
+      "sha256": "2348cb69a93b1edf93278c619d2b84f62b360e415bb0e7a673093b6158fd97c5"
+    },
+    {
+      "sequence": 3,
+      "filename": "probe_suite_B.part003",
+      "byte_size": 500000,
+      "sha256": "4630ccf8514c4acd4dac08f33e2275653bd76638dfe2cb61e882528e44d6d14f"
+    },
+    {
+      "sequence": 4,
+      "filename": "probe_suite_B.part004",
+      "byte_size": 500000,
+      "sha256": "fa5c1ffe53d826ee2fdcbaf5f47e66f584ab67c72afc403e1e2c682c6440e504"
+    },
+    {
+      "sequence": 5,
+      "filename": "probe_suite_B.part005",
+      "byte_size": 500000,
+      "sha256": "ce11a682b746e341a9848e4b65e519737e056c85827f775e4d90e64b02911e88"
+    },
+    {
+      "sequence": 6,
+      "filename": "probe_suite_B.part006",
+      "byte_size": 500000,
+      "sha256": "705f60f8afcc0069fe251af67e2bc3050d0770c7356037dc5ca7ee54a464e9ac"
+    },
+    {
+      "sequence": 7,
+      "filename": "probe_suite_B.part007",
+      "byte_size": 500000,
+      "sha256": "07ee82a0fd7581dc19c73d0aac38e4db275c649833533705d992a72b9021d267"
+    },
+    {
+      "sequence": 8,
+      "filename": "probe_suite_B.part008",
+      "byte_size": 500000,
+      "sha256": "490e0f9be4b781b20899f777e07165a19c52971b77288410efdda94a6d1c897a"
+    },
+    {
+      "sequence": 9,
+      "filename": "probe_suite_B.part009",
+      "byte_size": 500000,
+      "sha256": "4f62a10951648d981918d626a5b8502cf3b7769bbd01690b489c6fa633f687ac"
+    },
+    {
+      "sequence": 10,
+      "filename": "probe_suite_B.part010",
+      "byte_size": 500000,
+      "sha256": "2f3c4ad5bfcef7d7b7dd339d21ab8f0e6ce8d403db5d340f4752f7bd604c3ef9"
+    },
+    {
+      "sequence": 11,
+      "filename": "probe_suite_B.part011",
+      "byte_size": 500000,
+      "sha256": "bd17b236e2a7311c38051879f7231f0921746e6e6d7982f3eb41f1bf0a470ff6"
+    },
+    {
+      "sequence": 12,
+      "filename": "probe_suite_B.part012",
+      "byte_size": 500000,
+      "sha256": "a62db05471c204c7f31e6a1e9a6c341725007bebf8214957edab5471b0724645"
+    },
+    {
+      "sequence": 13,
+      "filename": "probe_suite_B.part013",
+      "byte_size": 500000,
+      "sha256": "389259643c0ecc2abccef05ef49e2ca98e6fed958d654adb3fd33ecc51d265d0"
+    },
+    {
+      "sequence": 14,
+      "filename": "probe_suite_B.part014",
+      "byte_size": 500000,
+      "sha256": "5ed658186c7591cbbabb4f7ce2516fb4eba98b308e916709cb913297ecdc1cc1"
+    },
+    {
+      "sequence": 15,
+      "filename": "probe_suite_B.part015",
+      "byte_size": 500000,
+      "sha256": "94191253e30fd4ea7efa3fac376a6ff0dce1aa19b27b558f786fc4aa4f168bc8"
+    },
+    {
+      "sequence": 16,
+      "filename": "probe_suite_B.part016",
+      "byte_size": 424341,
+      "sha256": "48fcb9d71d0b38595c3066430fe424a5acd5687337b49c378c02eec7ad56ea0f"
+    }
+  ],
+  "reconstruction": "Concatenate chunks in sequence order 001..016 byte-for-byte to reconstruct original file exactly - verify SHA-256 matches original_sha256",
+  "sealed_truth": "sealed_E_star.json hash d8a0bbd889463cda08bbba5c5189180f5f542d7adb3ffaa3836e38c7d1e1d416 remains organizer-only - NOT included",
+  "publish_instruction": "Publish each part as separate raw GitHub file - e.g., https://raw.githubusercontent.com/USER/REPO/main/probe_suite_B.part001 etc - provide raw URLs - keep byte-for-byte chunks, not JSON fragments"
+}
